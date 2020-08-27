@@ -1,0 +1,55 @@
+1.
+  (a) Inflexible method is better than flexible one, because expected relationship is close to linear by small number of predictors.
+  (b) Flexible method is better than inflexible one, because expected relationship is non-linear by small samples and large number of predictors.
+  (c) Flexible method is better than inflexible one, because flexible method can express non-linear relationship.
+  (d) Inflexible method is better than flexible one, because the data contains a lot of noises by high variance, flexible method will capture their needless noises.
+
+2.
+  (a) The scenario is regression problem. We're interested in inference. n=500, p=3.
+  (b) The scenario is classification problem. We're interested in prediction. n=20, p=4.
+  (c) The scenario is regression problem. We're interested in prediction. n=52, p=3.
+
+3.
+
+  definition:
+    |
+    |       high area 
+    |
+    |---------------------
+    |
+    |       low  area
+    |
+    |-------------------->
+     inflexible   flexible
+
+  bias: starting from between high area and low area, then going down as more flexible.
+  variance: starting from low area, then rising to high area as more flexible.
+  training error: starting from high area, then keeping going down to low area with more flexibility. 
+  test error: starting from high area, then keeping going down until reaching to moderate flexibility, after that rising to high area like going back to first point.
+  bayes(irreducible) error: horizontal tanget line at minimum test error.
+
+4. 
+  (a) 1. Classification with types of friends. Predictors are the number of smiling, the number of sharing interets, the times of meetings and so forth. This is a prediction who can be my close friends. 
+      2. Classification with types of viewers on my website. Predictors are the types of interest on my articles, the length of staying on there, whether on mailing list and so on. This is a inference question to identify which kind of topic can amuse my readers.
+      3. Classification with types of signals when I trade bitcoin. Predictors are several technical indicators. This is a prediction that it should be maximized the probability of gaining profit.
+
+  (b) skip
+  (c) skip
+
+5.
+  The advantage of flexible approach is that it enables to capture their complex relationship such as non-linear, but, disadvantage is that it may capture their noise which has no relationship on true probability density function.
+
+6. The main difference is whether having assumption of the distribution form or not. Parametric approach is good when you can assume that the data is following a specific distribution function. It provides better and simple statistical models. Non-parametric approach is not neccesary to select any base statistical model. It sometimes provides more accurate model than parametric one due to their ability of expressing a wide variety of distribution.
+
+7.
+  (a) obs. distance
+       1. 3
+       2. 2
+       3. 10^0.5
+       4. 5^0.5
+       5. 2^0.5
+       6. 3^0.5
+
+  (b) Green, because the closest point of X1=X2=X3=0 is obs. 5.
+  (c) Red, because Obs. 5,6,2 on Y are composed of two red and one green.
+  (d) Small, because small K makes the boundary complex and it can express their detailed relationship.
